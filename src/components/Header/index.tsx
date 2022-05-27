@@ -6,10 +6,23 @@ export default function Header() {
     return (
         <div className="header">
             <div className={"title"}>
-                Learn how to code and make IoT projects on your <span>smartphone!</span>
+                <p style={{marginBottom: "20px"}}>
+                    <span className="tag_primary">
+                        #LEARN
+                    </span>
+
+                    <span className="tag_primary">
+                        #PLAY
+                    </span>
+
+                    <span className="tag_primary">
+                        #CODE
+                    </span>
+                </p>
+                Learn how to code and make IoT projects on your smartphone!
 
                 <p>
-                    <button className="button_primary">
+                    <button onClick={()=>{window.location.href="#start"}} className="button_primary">
                         Start now
                         <ArrowRightIcon/>
                     </button>
