@@ -2,7 +2,6 @@ import React from "react";
 // @ts-ignore
 import Logo from "../../static/img/logo2.png";
 import {LoginIcon} from "@heroicons/react/outline";
-import {Link} from "react-router-dom";
 
 export default function Navbar() {
     return (
