@@ -15,23 +15,23 @@ export default function MainPage() {
         <div className={"mainPage"}>
             <Navbar/>
 
-            <Header/>
+            {/*<Header/>*/}
 
-            <Start/>
+            {/*<Start/>*/}
 
-            <WhatIs/>
+            {/*<WhatIs/>*/}
 
-            <Products/>
+            {/*<Products/>*/}
 
-            <Roadmap/>
+            {/*<Roadmap/>*/}
 
-            <Purchase/>
+            {/*<Purchase/>*/}
 
-            <Partners/>
+            {/*<Partners/>*/}
 
-            <ScrollToTop/>
+            {/*<ScrollToTop/>*/}
 
-            <Footer/>
+            {/*<Footer/>*/}
         </div>
     )
 }

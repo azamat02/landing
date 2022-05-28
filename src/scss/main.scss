@@ -65,11 +65,19 @@ $primary_color: #4CA0FC;
 }
 
 .navbar {
+  .logo {
+    img {
+      width: 100px;
+    }
+  }
+  .burger {
+    display: none;
+  }
   ul {
     width: 100%;
     font-size: 18px;
-    list-style: none;
     display: flex;
+    list-style: none;
     justify-content: space-between;
 
     div {
@@ -135,7 +143,6 @@ $primary_color: #4CA0FC;
     transform: translateY(0px);
   }
 }
-
 
 .aboutUs {
   margin: 150px 0;
@@ -525,6 +532,175 @@ $primary_color: #4CA0FC;
         padding: 20px;
         width: 100%;
       }
+    }
+  }
+}
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+  .navbar {
+    .burger {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      svg {
+        width: 40px;
+        height: 40px;
+        color: $primary_color;
+      }
+    }
+    .logo {
+      img {
+        width: 70px;
+      }
+    }
+
+    .list {
+      position: absolute;
+      top: 0;
+      right: 0;
+      flex-direction: column;
+      background: $primary_color;
+      color: white;
+      height: 100vh;
+      button {
+        background: white;
+        color: $primary_color;
+      }
+      li {
+      }
+    }
+  }
+
+}
+
+.nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .nav-header {
+    display: inline;
+
+    .nav-title {
+      display: inline-block;
+      font-size: 22px;
+
+      img {
+        width: 100px;
+      }
+    }
+  }
+
+  .nav-btn {
+    display: none;
+  }
+
+  .nav-links {
+    display: inline;
+    float: right;
+    font-size: 18px;
+
+    a {
+      display: inline-block;
+      padding: 10px 20px;
+      text-decoration: none;
+      transition: all ease-in-out 200ms;
+      color: black;
+
+      &:hover {
+        color: $primary_color;
+      }
+    }
+  }
+
+  #nav-check {
+    display: none;
+  }
+}
+
+@media (max-width:600px) {
+  .nav {
+    .nav-btn {
+      display: inline-block;
+      position: absolute;
+      right: 20px;
+      z-index: 100;
+      top: 20px;
+
+      label {
+        svg {
+          display: inline-block;
+          width: 50px;
+          height: 50px;
+          color: $primary_color;
+        }
+      }
+    }
+
+    .nav-links {
+      position: absolute;
+      display: block;
+      width: 0;
+      background-color: $primary_color;
+      color: white;
+      padding-top: 100px;
+      height: 100vh;
+      transition: all 0.3s ease-in;
+      overflow-x: hidden;
+      top: 0;
+      right: 0;
+
+      a {
+        display: block;
+        width: 100%;
+        text-align: center;
+        color: white;
+        font-weight: bolder;
+        margin-bottom: 10px;
+        font-size: 20px;
+
+        &:hover {
+          color: white;
+        }
+      }
+    }
+
+    #nav-check:not(:checked) ~ .nav-btn > label > .show {
+      display: block;
+    }
+    #nav-check:not(:checked) ~ .nav-btn > label > .hide {
+      display: none;
+    }
+
+    #nav-check:checked ~ .nav-links {
+      width: 50%;
+      overflow-x: auto;
+    }
+
+    #nav-check:checked ~ .nav-btn > label > .show {
+      color: white;
+      display: none;
+    }
+    #nav-check:checked ~ .nav-btn > label > .hide {
+      color: white;
+      display: block;
+    }
+
+    button {
+      margin: 20px;
+      background: white;
+      color: $primary_color;
     }
   }
 }

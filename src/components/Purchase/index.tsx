@@ -27,7 +27,7 @@ export default function Purchase() {
         };
 
         console.log(data)
-        axios.post("http://188.166.30.183:4000/api/form", data, {headers}).then(res=>{
+        axios.post("https://www.tbckend.kz/api/form", data, {headers}).then(res=>{
             console.log(res.data)
             swal(
                 'Done!',
