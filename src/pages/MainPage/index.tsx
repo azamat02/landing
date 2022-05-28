@@ -17,9 +17,9 @@ export default function MainPage() {
 
             <Header/>
 
-            {/*<Start/>*/}
+            <Start/>
 
-            {/*<WhatIs/>*/}
+            <WhatIs/>
 
             {/*<Products/>*/}
 
