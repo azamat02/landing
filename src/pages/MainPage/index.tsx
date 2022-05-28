@@ -21,17 +21,17 @@ export default function MainPage() {
 
             <WhatIs/>
 
-            {/*<Products/>*/}
+            <Products/>
 
-            {/*<Roadmap/>*/}
+            <Roadmap/>
 
-            {/*<Purchase/>*/}
+            <Purchase/>
 
-            {/*<Partners/>*/}
+            <Partners/>
 
-            {/*<ScrollToTop/>*/}
+            <ScrollToTop/>
 
-            {/*<Footer/>*/}
+            <Footer/>
         </div>
     )
 }
