@@ -33,6 +33,7 @@ $primary_color: #4CA0FC;
   font-size: 50px;
   margin-right: 20px;
   font-weight: bold;
+  border: none;
 }
 
 .button_primary {
@@ -121,7 +122,8 @@ $primary_color: #4CA0FC;
     line-height: 70px;
     font-size: 45px;
 
-    span {
+    .tag_primary {
+      font-size: 40px;
       color: $primary_color;
     }
 
@@ -703,4 +705,37 @@ $primary_color: #4CA0FC;
       color: $primary_color;
     }
   }
+
+  .header {
+    width: 100%;
+    margin: 50px 0;
+    display: block;
+    align-items: center;
+
+    img {
+      display: none;
+    }
+
+    .title {
+      margin-left: 0px;
+      font-weight: 400;
+      line-height: 1.5em;
+      font-size: 2em;
+
+      .tags {
+
+        .tag_primary {
+          font-size: 1em;
+          color: $primary_color;
+        }
+      }
+
+
+      button {
+        margin-top: 30px;
+        font-size: 25px;
+      }
+    }
+  }
+
 }

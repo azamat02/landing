@@ -15,7 +15,7 @@ export default function MainPage() {
         <div className={"mainPage"}>
             <Navbar/>
 
-            {/*<Header/>*/}
+            <Header/>
 
             {/*<Start/>*/}
 

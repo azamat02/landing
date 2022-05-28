@@ -28,10 +28,12 @@ export default function Navbar() {
                     <a href={"#contact_us"}>Contact us</a>
                     <a href={"#partners"}>Partners</a>
 
-                    <button className="button_primary">
-                        Login to platform
-                        <LoginIcon />
-                    </button>
+                    <a href="">
+                        <button className="button_primary">
+                            Login to platform
+                            <LoginIcon />
+                        </button>
+                    </a>
                 </div>
         </div>
     )
